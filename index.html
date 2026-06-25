@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material y Encuesta - Hernán Yepes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-black text-zinc-300 selection:bg-red-600 selection:text-white overflow-x-hidden min-h-[100svh] flex flex-col">
+
+  <!-- CABECERA DE LOGO -->
+  <header class="w-full bg-black py-4 sm:py-6 flex justify-center border-b border-zinc-900/40 relative z-30 shrink-0">
+    <img src="https://assets.cdn.filesafe.space/Dkh0814KIhxmzHkNCSkp/media/69af5b5cb9be706cc823a892.jpg" alt="Hernán Yepes Logo" class="h-10 sm:h-14 object-contain drop-shadow-xl">
+  </header>
+
+  <!-- ÁREA DE CONTENIDO PRINCIPAL -->
+  <div class="relative flex-grow flex flex-col items-center py-10 sm:py-16 px-4 sm:px-6">
+    
+    <!-- FONDO Y OVERLAY (Estilo cinematográfico) -->
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+      <img src="https://assets.cdn.filesafe.space/6pldra9b2W9fszReOb9j/media/6a3c7685b3c8655da2b26e36.jpg" alt="Fondo Tatuaje" class="w-full h-full object-cover object-[70%_25%] opacity-30 blur-[2px]">
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black z-10"></div>
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[600px] bg-[radial-gradient(ellipse_at_top,_rgba(220,38,38,0.15)_0%,_transparent_70%)] z-10"></div>
+    </div>
+
+    <!-- CONTENIDO -->
+    <main class="relative z-20 flex flex-col items-center w-full max-w-3xl mx-auto">
+      
+      <!-- TÍTULOS -->
+      <div class="text-center mb-12 w-full">
+        <div class="inline-flex items-center justify-center gap-2 px-4 py-1.5 mb-6 rounded-full bg-zinc-900/80 border border-zinc-700 text-zinc-300 text-xs sm:text-sm font-bold uppercase tracking-widest shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-500"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Paso Final de Preparación
+        </div>
+        
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-4 drop-shadow-lg">
+          PREPÁRATE PARA LA MASTERCLASS
+        </h1>
+        
+        <p class="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+          Para aprovechar al máximo nuestra sesión en vivo y garantizar que el contenido te sea <strong class="text-white">100% útil</strong>, completa estos dos pasos ahora mismo.
+        </p>
+      </div>
+
+      <!-- CONTENEDOR DE LOS PASOS -->
+      <div class="w-full space-y-6 sm:space-y-8">
+
+        <!-- PASO 1: DESCARGA DE MATERIAL -->
+        <div class="bg-zinc-900/50 backdrop-blur-md border border-zinc-800 rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start relative overflow-hidden transition-all hover:border-zinc-700 shadow-xl">
+          <!-- Decoración de fondo de la tarjeta -->
+          <div class="absolute top-0 right-0 w-32 h-32 bg-zinc-800/30 rounded-bl-full -z-10"></div>
+          
+          <!-- Número / Icono -->
+          <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-black border border-zinc-800 rounded-full flex items-center justify-center shadow-inner relative z-10">
+            <span class="text-2xl sm:text-3xl font-black text-white">1</span>
+          </div>
+          
+          <!-- Textos y Botón -->
+          <div class="flex-grow text-center md:text-left relative z-10 flex flex-col h-full justify-between">
+            <div>
+              <h2 class="text-xl sm:text-2xl font-bold text-white mb-2 uppercase tracking-wide">
+                Descarga tu Workbook Oficial
+              </h2>
+              <p class="text-sm sm:text-base text-zinc-400 mb-6 leading-relaxed">
+                Descarga y ten a la mano el material de estudio. Aquí encontrarás la estructura base de los diseños surrealistas que analizaremos en vivo. <span class="text-zinc-300">¡Imprímelo o tenlo en tu tablet!</span>
+              </p>
+            </div>
+            <!-- Botón Descargar (Gris Claro / Blanco para diferenciarlo de la acción principal roja) -->
+            <a href="#" target="_blank" class="inline-flex items-center justify-center gap-3 bg-zinc-100 hover:bg-white text-black px-6 py-4 rounded-xl font-black text-sm sm:text-base uppercase tracking-wider transition-all duration-300 transform hover:-translate-y-1 shadow-[0_5px_15px_rgba(255,255,255,0.1)] w-full md:w-auto self-start">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+              Descargar Material PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- PASO 2: ENCUESTA -->
+        <div class="bg-zinc-900/50 backdrop-blur-md border border-red-900/30 rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start relative overflow-hidden transition-all hover:border-red-600/50 shadow-[0_0_30px_rgba(220,38,38,0.05)]">
+          <!-- Decoración de fondo de la tarjeta -->
+          <div class="absolute bottom-0 right-0 w-48 h-48 bg-red-900/10 rounded-tl-full -z-10 blur-xl"></div>
+          
+          <!-- Número / Icono -->
+          <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-red-600 border border-red-500 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,0.4)] relative z-10 animate-pulse">
+            <span class="text-2xl sm:text-3xl font-black text-white">2</span>
+          </div>
+          
+          <!-- Textos y Botón -->
+          <div class="flex-grow text-center md:text-left relative z-10 flex flex-col h-full justify-between">
+            <div>
+              <h2 class="text-xl sm:text-2xl font-bold text-red-500 mb-2 uppercase tracking-wide">
+                Ayúdame a personalizar la clase
+              </h2>
+              <p class="text-sm sm:text-base text-zinc-400 mb-6 leading-relaxed">
+                Quiero que esta masterclass marque un antes y un después en tu técnica. Responde esta breve encuesta de 1 minuto para conocer tu nivel actual y adaptar los ejemplos a tus necesidades reales.
+              </p>
+            </div>
+            <!-- Botón Encuesta (Rojo Llamativo) -->
+            <a href="https://forms.gle/hGaL27A5faa12LYR6" target="_blank" class="relative group inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white px-6 py-4 rounded-xl font-black text-sm sm:text-base uppercase tracking-wider transition-all duration-300 transform hover:-translate-y-1 shadow-[0_5px_20px_rgba(220,38,38,0.4)] w-full md:w-auto self-start overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="relative z-10"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+              <span class="relative z-10">Completar Encuesta</span>
+              <!-- Efecto de brillo en el botón -->
+              <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="relative z-20 w-full text-center mt-12 sm:mt-16 shrink-0">
+      <p class="text-[10px] sm:text-sm text-zinc-600 uppercase tracking-widest font-bold">
+        HERNÁN YEPES - 2026<br class="block sm:hidden"> 
+        <span class="hidden sm:inline"> | </span> 
+        TODOS LOS DERECHOS RESERVADOS
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- ESTILOS EXTRA PARA ANIMACIONES -->
+  <style>
+    @keyframes shimmer {
+      100% {
+        transform: translateX(100%);
+      }
+    }
+  </style>
+
+</body>
+</html>
